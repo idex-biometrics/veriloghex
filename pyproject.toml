@@ -1,0 +1,38 @@
+[project]
+name = "veriloghex"
+description = "Loading from and dumping to Verilog Hex files"
+authors = [
+    { name = "Shareef Jalloq" },
+    { email = "shareef.jalloq@idexbiometrics.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.6"
+keywords = [
+    "hex",
+    "verilog",
+    "vmem",
+    "readmemh"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dynamic = ["version"]
+
+[urls]
+homepage = "https://github.com/idex-biometrics/veriloghex"
+
+[build-system]
+requires = [
+    "setuptools>=61.0", 
+    "wheel",
+    "setuptools_scm[toml]>=6.2",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "veriloghex.__version__"}
+
+[tool.setuptools_scm]
+write_to = "veriloghex/_version.py"
