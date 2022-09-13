@@ -20,7 +20,7 @@ classifiers = [
 ]
 dynamic = ["version"]
 
-[urls]
+[project.urls]
 homepage = "https://github.com/idex-biometrics/veriloghex"
 
 [build-system]
