@@ -34,6 +34,7 @@ with Path('mem.32.vmem').open('w') as f:
 # Initialise from a list of bytes and write out as VMEM
 vmem = VerilogHex([0xde, 0xad, 0xbe, 0xef])
 print(vmem.tovmem())
+
 ```
 
 ## Status
